@@ -1,0 +1,13 @@
+{
+  "name": "history-workspace-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix \"./historie projektopgave\" run dev",
+    "build": "npm --prefix \"./historie projektopgave\" run build",
+    "lint": "npm --prefix \"./historie projektopgave\" run lint",
+    "preview": "npm --prefix \"./historie projektopgave\" run preview"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.13.1"
+  }
+}

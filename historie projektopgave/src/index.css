@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text:wght@400;600&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --bg: #111317;
+  --panel: #171a20;
+  --panel-alt: #1f232b;
+  --line: #2a2e37;
+  --gold: #c1b179;
+  --ink: #eee8d6;
+  --muted: #a9a494;
+}
+
+[data-theme='light'] {
+  --bg: #efefef;
+  --panel: #f8f8f8;
+  --panel-alt: #ffffff;
+  --line: #d8d8d8;
+  --gold: #b6a66d;
+  --ink: #252525;
+  --muted: #636363;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Crimson Text', serif;
+}
+
+.history-card {
+  position: relative;
+  border: 3px solid color-mix(in srgb, var(--gold) 78%, black 22%);
+  background: var(--panel-alt);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 16%, transparent 84%);
+}
+
+.history-pin {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.plaque-title {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 2.3rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 767px) {
+  .plaque-title {
+    font-size: 2.1rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (min-width: 768px) {
+  .plaque-title {
+    font-size: 3.1rem;
+  }
+}
+
+[data-theme='light'] .history-card {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 25%, transparent 75%);
+}
