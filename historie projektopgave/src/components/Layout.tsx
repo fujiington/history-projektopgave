@@ -49,15 +49,6 @@ function Layout({ theme, onToggleTheme }: LayoutProps) {
       <div className="w-full border-x border-[var(--line)] bg-[var(--panel)]">
         <header className="relative h-[310px] bg-[url('https://unsplash.com/photos/Fo5dTm6ID1Y/download?force=true&w=2000')] bg-cover bg-center md:h-[400px] xl:h-[500px]">
           <div className="history-card absolute left-1/2 top-[56%] w-[78%] max-w-[360px] -translate-x-1/2 rounded-[1px] px-4 py-5 text-center md:top-[56%] md:w-[64%] md:max-w-[760px] md:px-8 md:py-6 xl:w-[56%] xl:max-w-[860px] xl:py-7">
-            {theme === 'light' && (
-              <div className="absolute -left-2 top-2 flex items-center gap-1 rounded-full bg-[#2a2a2a] p-1 pr-2 shadow-lg md:-left-4 md:top-3">
-                <span className="grid size-7 place-items-center rounded-full bg-[#8b4ff0] text-xs font-bold text-white md:size-8">
-                  T
-                </span>
-                <span className="size-6 rounded-full bg-[url('https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=60&q=80')] bg-cover bg-center md:size-7" />
-              </div>
-            )}
-
             <p className="plaque-title">
               {plaqueTitle}
             </p>
@@ -73,7 +64,7 @@ function Layout({ theme, onToggleTheme }: LayoutProps) {
         </header>
 
         <nav
-          className="mt-0 grid grid-cols-3 items-center border-y border-[var(--line)] bg-[#13161b] px-3 text-center text-[0.68rem] uppercase tracking-[0.08em] md:text-[0.8rem]"
+          className="mt-0 grid grid-cols-3 items-center border-y border-[var(--line)] bg-[var(--panel)] px-3 text-center text-[0.68rem] uppercase tracking-[0.08em] md:text-[0.8rem]"
           aria-label="Primar navigation"
         >
           <NavLink

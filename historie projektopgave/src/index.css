@@ -33,6 +33,14 @@ body,
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 body {
@@ -40,6 +48,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: 'Crimson Text', serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .history-card {
