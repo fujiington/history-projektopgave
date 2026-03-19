@@ -14,7 +14,7 @@ function Layout({ theme, onToggleTheme }: LayoutProps) {
   const location = useLocation()
 
   const activeClass =
-    'text-[var(--gold)] underline decoration-[0.8px] underline-offset-[2px]'
+    'text-[var(--gold)] underline decoration-[0.8px] underline-offset-[2px] text-[0.85rem] md:text-[0.98rem] font-semibold'
   const idleClass =
     'text-[var(--muted)] hover:text-[var(--gold)]'
 
